@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Internmeets | Thank You</title>
+  <meta name="description" content="InternMeets">
+  <meta name="keywords" content="Internship in India, Internship in Delhi, Internship in Bangalore, Internship in Hyderabad, Internship in Mumbai, Internship in Chennai, Internship in Gurgaon, Internship in Kolkata, Virtual internship, Internship in Nagpur , Internship in bhilai, Internship for java , Internship in pune">
+  <meta name="author" content="Kunal Singh">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You</title>
+  <style>
+    @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+    .email-signup-thankyou {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background: #0c4ddb;
+      padding: 10%;
+    }
+
+    .email-signup-thankyou .content {
+      margin: auto;
+      /* Magic! */
+      max-width: 700px;
+      color: #333;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.55), 0 3px 6px rgba(0, 0, 0, 0.23);
+      background: url("https://www.crafta.co.il/images/paper-plane.gif") no-repeat #fff;
+      background-position: right 5px bottom 5px;
+      background-size: 10em;
+      text-align: center;
+      position: relative;
+      padding: 10%;
+      border-radius: 5px;
+    }
+
+    .email-signup-thankyou .content .left-hole,
+    .email-signup-thankyou .content .right-hole {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #333;
+      border-radius: 50%;
+      top: 15px;
+    }
+
+    .email-signup-thankyou .content .left-hole {
+      left: 15px;
+      top: 10px;
+    }
+
+    .email-signup-thankyou .content .right-hole {
+      right: 15px;
+      top: 10px;
+    }
+
+    .email-signup-thankyou .content h2,
+    .email-signup-thankyou .content h3 {
+      text-align: left;
+      padding: 5% 5% 0% 3%;
+      color: #333;
+      font-weight: 900;
+    }
+
+    .email-signup-thankyou .content .main-content>h1 {
+      color: #333;
+      text-transform: uppercase;
+      margin-top: -2%;
+      font-size: 2.5em;
+      font-weight: 900;
+    }
+
+    .ccode {
+      background: linear-gradient(110deg, rgb(159, 252, 10), rgb(39, 196, 18));
+      padding: 20px;
+      font-size: 2em;
+    }
+
+    .ccode:hover , .ccode:focus {
+      background: linear-gradient(410deg, rgb(9, 214, 94), rgb(133, 241, 61));
+
+    }
+
+
+    @media(max-width: 450px) {
+      .content {
+        width: 100vw;
+      }
+
+      h1 {
+        font-size: 20px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header-custom email-signup-thankyou">
+    <div class="content">
+      <!-- <div class="left-hole"></div>
+      <div class="right-hole"></div> -->
+      <div class="main-content">
+        <h1>Success! You have Successfully Enrolled.</h1>
+        <p>Thank you for signing-up, it means a lot to us, just like you do! We really appreciate you giving us a moment
+          of your time. We will be getting back to you via email or Phone.</p>
+        <p class="strong">Your coupon code is.</p>
+        <p class="ccode"></p>
+        <p>Note it Down for Getting Amazing Discounts!</p>
+        <h3>We will Get Back to you within 24hours</h3>
+        <a href="index.html">Go back to Site</a>
+        <!-- <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul> -->
+      </div>
+
+    </div>
+  </div>
+  <script>
+    function randomString(length, chars) {
+      var result = '';
+      for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
+      return result;
+    }
+    var cc = (randomString(8, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+    var p = document.getElementsByClassName('ccode')[0];
+    p.innerText = cc;
+    console.log(cc)
+  </script>
+
+</body>
+
+</html>

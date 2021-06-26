@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /elements.html
+
+Disallow: /thankyou.html
+
+Disallow: contact_process.php
