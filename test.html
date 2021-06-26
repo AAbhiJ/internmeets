@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF viewer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet"
+			href=
+"https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+			integrity=
+"sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+			crossorigin="anonymous" />
+		<script src=
+"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+				integrity=
+"sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+				crossorigin="anonymous"></script>
+		<script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+				integrity=
+"sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+				crossorigin="anonymous"></script> -->
+
+                <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+                <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+            </head>
+<body>
+
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content h-75">
+            <div class="modal-body h-100">
+                <div class="row h-100">
+                    <div class="col-lg-8">
+                        <iframe class="responsive-iframe h-100 w-100" src="assets/pdf/wb.pdf"  alt="alternative" ></iframe>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-between align-items-center flex-column">
+                        <div class="details">
+                            <h2 class="border-bottom">Why Choose Us</h2>
+                            <ul class="list-unstyled mt-5">
+                                <li class="h6"><i class="fas fa-check"></i> Industry Course</li>
+                                <li class="h6"><i class="fas fa-check"></i> Industry Training</li>
+                                <li class="h6"><i class="fas fa-check"></i> Industry Project</li>
+                            </ul>    
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  <h2>657 modal</h2>
+  <h2>230 modal</h2>
+
+
+  <!-- MODAL ORIGINAL -->
+  <div class="modal-overlay">
+    <div class="modal">
+
+      <a class="close-modal">
+        <svg viewBox="0 0 20 20">
+          <path fill="#000000"
+            d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+          </path>
+        </svg>
+      </a><!-- close modal -->
+
+      <div class="modal-content" style="margin-top:50px; height: 400px; overflow-y: scroll;">
+
+        <h3 style="margin: 10px;"><strong>Training Details and Perks</strong></h3>
+        <div style="display: flex; flex-direction: column; align-items: flex-start; margin: 10px;">
+          <p><span class="mdi mdi-step-forward" style="font-size: 1em;"></span>1 to 1 support with live
+            lectures.</p>
+          <p><span class="mdi mdi-step-forward" style="font-size: 1em;"></span>Portfolio Building Project
+            along with training</p>
+          <p><span class="mdi mdi-step-forward" style="font-size: 1em;"></span>Nominal Prize with 90% off
+            and only registration fees
+          </p>
+          <p><span class="mdi mdi-step-forward" style="font-size: 1em;"></span>Get Assured Placements with
+            our Industry Experience</p>
+        </div>
+        <a href="https://wa.link/6d9qtu"><button class="wapp-btn" style="background: #25D366 !important;">Apply &
+            Connect via Whatsapp <span class="mdi mdi-whatsapp" style="font-size: 1em;"></span></button></a>
+
+
+        <h3 style="margin: 10px;"><strong>OR</strong></h3>
+        <h3 style="margin: 10px;"><strong>Enroll with Form to get Coupon Code</strong></h3>
+
+        <div style="display: flex; flex-direction: column; margin: 10px;">
+          <script type="text/javascript">var submitted = false;</script>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+            onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+
+          <form
+            action="https://docs.google.com/forms/u/7/d/e/1FAIpQLScufLs8OlUS-m0Yb5Iw8mTCDegw_78LONewYpivmnromx5abg/formResponse"
+            style="display: flex; flex-direction: column; justify-content: stretch;" target="hidden_iframe"
+            onsubmit="submitted=true;">
+            <input type="text" class="form-input" name="entry.831785372" placeholder="Name" required>
+            <input type="tel" minlength="10" maxlength="10" class="form-input" name="entry.744172265"
+              placeholder="PhoneNo" required>
+            <input type="email" class="form-input" name="entry.544595364" placeholder="Email" required>
+            <input type="text" class="form-input" name="entry.1425119734" placeholder="Domain eg: Java" required>
+
+            <button type="submit" name="Submit">SUBMIT</button>
+          </form>
+
+        </div>
+
+      </div>
+      <!-- content -->
+
+    </div><!-- modal -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+
+</body>
+
+
+
+</html>
