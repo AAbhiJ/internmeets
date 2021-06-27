@@ -346,23 +346,25 @@ $('.top-job-slider').slick({
 
 // MODAL POPUP 
 
-var modalOverlay = $('.modal-overlay');
+function activeModalOverlayChild(){
+  var modal = $('.modal-overlay.active .modal');
+  modal.addClass('active');
+}
 
+var modalOverlay = $('.modal-overlay');
 
 // Python
 var pythonModal = $('.modal-overlay.pythonModal');
 $('button#pythonModalBtn').click(function(){
     pythonModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+    activeModalOverlayChild();
 });
 
 // Java
 var javaModal = $('.modal-overlay.javaModal');
 $('button#javaModalBtn').click(function(){
     javaModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -370,24 +372,21 @@ $('button#javaModalBtn').click(function(){
 var reactModal = $('.modal-overlay.reactModal');
 $('button#reactModalBtn').click(function(){
     reactModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 // angular
 var angularModal = $('.modal-overlay.angularModal');
 $('button#angularModalBtn').click(function(){
     angularModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 // UIUX
 var UIUXModal = $('.modal-overlay.UIUXModal');
 $('button#UIUXModalBtn').click(function(){
     UIUXModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -395,16 +394,14 @@ $('button#UIUXModalBtn').click(function(){
 var phpModal = $('.modal-overlay.phpModal');
 $('button#phpModalBtn').click(function(){
     phpModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 // js
 var jsModal = $('.modal-overlay.jsModal');
 $('button#jsModalBtn').click(function(){
     jsModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -412,40 +409,35 @@ $('button#jsModalBtn').click(function(){
 var nodeModal = $('.modal-overlay.nodeModal');
 $('button#nodeModalBtn').click(function(){
     nodeModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 // mean
 var meanModal = $('.modal-overlay.meanModal');
 $('button#meanModalBtn').click(function(){
     meanModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 // mern
 var mernModal = $('.modal-overlay.mernModal');
 $('button#mernModalBtn').click(function(){
     mernModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 // digital
 var digitalModal = $('.modal-overlay.digitalModal');
 $('button#digitalModalBtn').click(function(){
     digitalModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 // android
 var androidModal = $('.modal-overlay.androidModal');
 $('button#androidModalBtn').click(function(){
     androidModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -453,8 +445,7 @@ $('button#androidModalBtn').click(function(){
 var wordpressModal = $('.modal-overlay.wordpressModal');
 $('button#wordpressModalBtn').click(function(){
     wordpressModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -462,8 +453,7 @@ $('button#wordpressModalBtn').click(function(){
 var sapModal = $('.modal-overlay.sapModal');
 $('button#sapModalBtn').click(function(){
     sapModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -471,8 +461,7 @@ $('button#sapModalBtn').click(function(){
 var matlabModal = $('.modal-overlay.matlabModal');
 $('button#matlabModalBtn').click(function(){
     matlabModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -480,8 +469,7 @@ $('button#matlabModalBtn').click(function(){
 var seoModal = $('.modal-overlay.seoModal');
 $('button#seoModalBtn').click(function(){
     seoModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -489,8 +477,7 @@ $('button#seoModalBtn').click(function(){
 var dsModal = $('.modal-overlay.dsModal');
 $('button#dsModalBtn').click(function(){
     dsModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -498,8 +485,7 @@ $('button#dsModalBtn').click(function(){
 var mlModal = $('.modal-overlay.mlModal');
 $('button#mlModalBtn').click(function(){
     mlModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -507,8 +493,7 @@ $('button#mlModalBtn').click(function(){
 var graphicModal = $('.modal-overlay.graphicModal');
 $('button#graphicModalBtn').click(function(){
     graphicModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -516,8 +501,7 @@ $('button#graphicModalBtn').click(function(){
 var baModal = $('.modal-overlay.baModal');
 $('button#baModalBtn').click(function(){
     baModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -525,8 +509,7 @@ $('button#baModalBtn').click(function(){
 var hrModal = $('.modal-overlay.hrModal');
 $('button#hrModalBtn').click(function(){
     hrModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -534,8 +517,7 @@ $('button#hrModalBtn').click(function(){
 var marketingModal = $('.modal-overlay.marketingModal');
 $('button#marketingModalBtn').click(function(){
     marketingModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -543,8 +525,7 @@ $('button#marketingModalBtn').click(function(){
 var sfModal = $('.modal-overlay.sfModal');
 $('button#sfModalBtn').click(function(){
     sfModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -552,8 +533,7 @@ $('button#sfModalBtn').click(function(){
 var stModal = $('.modal-overlay.stModal');
 $('button#stModalBtn').click(function(){
     stModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
@@ -561,26 +541,27 @@ $('button#stModalBtn').click(function(){
 var sqlModal = $('.modal-overlay.sqlModal');
 $('button#sqlModalBtn').click(function(){
     sqlModal.addClass('active');
-    var modal = $('.modal-overlay.active .modal');
-    modal.addClass('active');
+  activeModalOverlayChild();
 });
 
 
 $('.close-modal-btn').click(function(){
   var modal = $('.modal');
-
   modal.removeClass('active');
   modalOverlay.removeClass('active');
 });
 
 
-var elements = $('.modal-overlay, .modal');
+var elements = $('.modal-overlay.contactUsModal');
 
 $('button#modal_button').click(function(){
     elements.addClass('active');
+    var modal = $('.modal-overlay.active .modal');
+    modal.addClass('active');
 });
 
 $('.close-modal').click(function(){
+  var elements = $('.modal-overlay, .modal');
     elements.removeClass('active');
 });
 
