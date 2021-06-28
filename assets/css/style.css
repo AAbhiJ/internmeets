@@ -10044,9 +10044,9 @@ button:focus {
   position: relative;
   margin: 0 auto;
   background-color: #fff;
-  width: 800px;
+  width: 900px;
   max-width: 90rem;
-  min-height: 40rem;
+  min-height: 50rem;
   padding: 1rem;
   border-radius: 3px;
   opacity: 0;
@@ -10107,11 +10107,15 @@ button:focus {
 /* changes on 26/06/2021 */
 
 .modal-dialog{
-  height: 40rem;
+  height: 50rem;
 }
 
 .modalButtonDiv{
   gap:2px;
+}
+
+.modalxl{
+  max-width:100%;
 }
 
 /* changes on 26/06/2021 */
