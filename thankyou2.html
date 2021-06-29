@@ -107,12 +107,33 @@
       <div class="main-content">
         <h1>Success! You have Successfully Enrolled.</h1>
         <p>Thank you for signing-up, it means a lot to us, just like you do! We really appreciate you giving us a moment
-          of your time. We will be getting back to you via email or Phone within 24hours.</p>
+          of your time. We will be getting back to you via email or Phone.</p>
+        <p class="strong">Your coupon code is.</p>
+        <p class="ccode"></p>
+        <p>Note it Down for Getting Amazing Discounts!</p>
+        <h3>We will Get Back to you within 24hours</h3>
         <a href="index.html">Go back to Site</a>
+        <!-- <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul> -->
       </div>
 
     </div>
   </div>
+  <script>
+    function randomString(length, chars) {
+      var result = '';
+      for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
+      return result;
+    }
+    var cc = (randomString(8, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+    var p = document.getElementsByClassName('ccode')[0];
+    p.innerText = cc;
+    console.log(cc)
+  </script>
+
 </body>
 
 </html>
