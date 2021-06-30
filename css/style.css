@@ -10198,6 +10198,7 @@ button:focus {
 }
 
 
+
 /* highlighting sibling  */
 
 .care-tag:focus , .care-tag:hover ~ .description-text{
@@ -10387,3 +10388,5 @@ ul.breadcrumb li a:hover {
 	
 	text-align: left;
 }
+
+

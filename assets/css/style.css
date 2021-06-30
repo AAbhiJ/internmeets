@@ -10405,3 +10405,42 @@ ul.breadcrumb li a:hover {
 	
 	text-align: left;
 }
+
+/* Training Features */
+
+.features .row .featureCard{
+  height:28rem;
+  /* background-color: red; */
+}
+
+i.featureLogo{
+  font-size: 3rem;
+}
+
+.realTime{
+  color:blue;
+}
+
+.LiveProject {
+  color: lightgreen;
+}
+
+.certificate {
+  color: purple;
+}
+.fees {
+  color: lightgreen;
+}
+
+
+.flexibility {
+  color: red;
+}
+
+i.placement{
+  color: blue;
+}
+
+p.featurecontent {
+  line-height: 22px;
+}
