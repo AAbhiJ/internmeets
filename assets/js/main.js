@@ -397,6 +397,23 @@ $('button#phpModalBtn').click(function(){
   activeModalOverlayChild();
 });
 
+// laravel
+var laravelModal = $('.modal-overlay.laravelModal');
+$('button#laravelModalBtn').click(function(){
+    laravelModal.addClass('active');
+  activeModalOverlayChild();
+});
+
+
+
+// codeigniater
+var codeigniaterModal = $('.modal-overlay.codeigniaterModal');
+$('button#codeigniaterModalBtn').click(function(){
+    codeigniaterModal.addClass('active');
+  activeModalOverlayChild();
+});
+
+
 // js
 var jsModal = $('.modal-overlay.jsModal');
 $('button#jsModalBtn').click(function(){
@@ -529,12 +546,22 @@ $('button#sfModalBtn').click(function(){
 });
 
 
-// st
-var stModal = $('.modal-overlay.stModal');
-$('button#stModalBtn').click(function(){
-    stModal.addClass('active');
+// stm
+var stmModal = $('.modal-overlay.stmModal');
+$('button#stmModalBtn').click(function(){
+    stmModal.addClass('active');
   activeModalOverlayChild();
 });
+
+
+// sta
+var staModal = $('.modal-overlay.staModal');
+$('button#staModalBtn').click(function(){
+    staModal.addClass('active');
+  activeModalOverlayChild();
+});
+
+
 
 
 // sql
