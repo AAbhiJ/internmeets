@@ -353,11 +353,17 @@ function activeModalOverlayChild(){
 
 var modalOverlay = $('.modal-overlay');
 
+// Here We have used PDFJS express for displaying PDF.
+// We use this because some browser having issues that the pdf ask automatically to download.
+// Here we are appending this iframe if user clicked on the button and also checking the iframe is not present already 
+// to avoid multiple iframe appending. and also doing this to reduce time and memory usage
+
 // Python
 var pythonModal = $('.modal-overlay.pythonModal');
 $('button#pythonModalBtn').click(function(){
     pythonModal.addClass('active');
     activeModalOverlayChild();
+    if(!$('.pythonModal .modal-body .row .col-lg-8 iframe').length)
     $('.pythonModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F1)python syllabus.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe>');
 
 });
@@ -367,6 +373,7 @@ var javaModal = $('.modal-overlay.javaModal');
 $('button#javaModalBtn').click(function(){
     javaModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.javaModal .modal-body .row .col-lg-8 iframe').length)
   $('.javaModal .modal-body .row .col-lg-8').append('<iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F2)java.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -377,6 +384,7 @@ var reactModal = $('.modal-overlay.reactModal');
 $('button#reactModalBtn').click(function(){
     reactModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.reactModal .modal-body .row .col-lg-8 iframe').length)
   $('.reactModal .modal-body .row .col-lg-8').append('<iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F3)REACT JS PDF.pdf"title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -386,6 +394,7 @@ var angularModal = $('.modal-overlay.angularModal');
 $('button#angularModalBtn').click(function(){
     angularModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.angularModal .modal-body .row .col-lg-8 iframe').length)
   $('.angularModal .modal-body .row .col-lg-8').append('<iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F4)Angular 9 Syllabus.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe>');
 
 });
@@ -395,6 +404,7 @@ var UIUXModal = $('.modal-overlay.UIUXModal');
 $('button#UIUXModalBtn').click(function(){
     UIUXModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.UIUXModal .modal-body .row .col-lg-8 iframe').length)
   $('.UIUXModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2FUIUX Syllabus.pdf" title="webviewer"frameborder="0" class="w-100 h-100"></iframe>');
 
 });
@@ -405,6 +415,7 @@ var phpModal = $('.modal-overlay.phpModal');
 $('button#phpModalBtn').click(function(){
     phpModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.phpModal .modal-body .row .col-lg-8 iframe').length)
   $('.phpModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2FPHP.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -414,6 +425,7 @@ var laravelModal = $('.modal-overlay.laravelModal');
 $('button#laravelModalBtn').click(function(){
     laravelModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.laravelModal .modal-body .row .col-lg-8 iframe').length)
   $('.laravelModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Flaravel.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -425,6 +437,7 @@ var codeigniaterModal = $('.modal-overlay.codeigniaterModal');
 $('button#codeigniaterModalBtn').click(function(){
     codeigniaterModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.codeigniaterModal .modal-body .row .col-lg-8 iframe').length)
   $('.codeigniaterModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fcodeignater.pdf" title="webviewer"  frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -435,6 +448,7 @@ var jsModal = $('.modal-overlay.jsModal');
 $('button#jsModalBtn').click(function(){
     jsModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.jsModal .modal-body .row .col-lg-8 iframe').length)
   $('.jsModal .modal-body .row .col-lg-8').append('  <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2FJS.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -445,6 +459,7 @@ var nodeModal = $('.modal-overlay.nodeModal');
 $('button#nodeModalBtn').click(function(){
     nodeModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.nodeModal .modal-body .row .col-lg-8 iframe').length)
   $('.nodeModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F8)node js pdf 909098.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -454,6 +469,7 @@ var meanModal = $('.modal-overlay.meanModal');
 $('button#meanModalBtn').click(function(){
     meanModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.meanModal .modal-body .row .col-lg-8 iframe').length)
   $('.meanModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2FMEAN.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -463,6 +479,7 @@ var mernModal = $('.modal-overlay.mernModal');
 $('button#mernModalBtn').click(function(){
     mernModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.mernModal .modal-body .row .col-lg-8 iframe').length)
   $('.mernModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2FMERN.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -472,6 +489,7 @@ var digitalModal = $('.modal-overlay.digitalModal');
 $('button#digitalModalBtn').click(function(){
     digitalModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.digitalModal .modal-body .row .col-lg-8 iframe').length)
   $('.digitalModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F11)DIGITALMARKETING.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -481,6 +499,7 @@ var androidModal = $('.modal-overlay.androidModal');
 $('button#androidModalBtn').click(function(){
     androidModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.androidModal .modal-body .row .col-lg-8 iframe').length)
   $('.androidModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroid basic + adv  pdf.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -491,6 +510,7 @@ var wordpressModal = $('.modal-overlay.wordpressModal');
 $('button#wordpressModalBtn').click(function(){
     wordpressModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.wordpressModal .modal-body .row .col-lg-8 iframe').length)
   $('.wordpressModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2FWordPress.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -501,6 +521,7 @@ $('button#wordpressModalBtn').click(function(){
 // $('button#sapModalBtn').click(function(){
 //     sapModal.addClass('active');
 //   activeModalOverlayChild();
+    // if(!$('.pythonModal .modal-body .row .col-lg-8 iframe').length)
 //   $('.sapModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer"src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F25)SQL PDF 11.pdf" title="webviewer"frameborder="0" class="w-100 h-100"></iframe> ');
 
 // });
@@ -511,6 +532,7 @@ var matlabModal = $('.modal-overlay.matlabModal');
 $('button#matlabModalBtn').click(function(){
     matlabModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.matlabModal .modal-body .row .col-lg-8 iframe').length)
   $('.matlabModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F15)MATLAB and Simulink.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -521,6 +543,7 @@ var seoModal = $('.modal-overlay.seoModal');
 $('button#seoModalBtn').click(function(){
     seoModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.seoModal .modal-body .row .col-lg-8 iframe').length)
   $('.seoModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F16) SEO TRAINING PDF.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -531,6 +554,7 @@ var dsModal = $('.modal-overlay.dsModal');
 $('button#dsModalBtn').click(function(){
     dsModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.dsModal .modal-body .row .col-lg-8 iframe').length)
   $('.dsModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F17)DATA SCIENCE PDF.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -541,6 +565,7 @@ var mlModal = $('.modal-overlay.mlModal');
 $('button#mlModalBtn').click(function(){
     mlModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.mlModal .modal-body .row .col-lg-8 iframe').length)
   $('.mlModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2FML.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -551,6 +576,7 @@ var graphicModal = $('.modal-overlay.graphicModal');
 $('button#graphicModalBtn').click(function(){
     graphicModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.graphicModal .modal-body .row .col-lg-8 iframe').length)
   $('.graphicModal .modal-body .row .col-lg-8').append('<iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F19)Graphic design course 11.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -561,6 +587,7 @@ var baModal = $('.modal-overlay.baModal');
 $('button#baModalBtn').click(function(){
     baModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.baModal .modal-body .row .col-lg-8 iframe').length)
   $('.baModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F20)businessAnalytics.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -571,6 +598,7 @@ var hrModal = $('.modal-overlay.hrModal');
 $('button#hrModalBtn').click(function(){
     hrModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.hrModal .modal-body .row .col-lg-8 iframe').length)
   $('.hrModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F21)HR SYLLABUS PDF.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -581,6 +609,7 @@ var marketingModal = $('.modal-overlay.marketingModal');
 $('button#marketingModalBtn').click(function(){
     marketingModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.marketingModal .modal-body .row .col-lg-8 iframe').length)
   $('.marketingModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fwb.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -591,6 +620,7 @@ var sfModal = $('.modal-overlay.sfModal');
 $('button#sfModalBtn').click(function(){
     sfModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.sfModal .modal-body .row .col-lg-8 iframe').length)
   $('.sfModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F22)salesforce pdf.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -601,6 +631,7 @@ var stmModal = $('.modal-overlay.stmModal');
 $('button#stmModalBtn').click(function(){
     stmModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.stmModal .modal-body .row .col-lg-8 iframe').length)
   $('.stmModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fmanualtesting.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -611,6 +642,7 @@ var staModal = $('.modal-overlay.staModal');
 $('button#staModalBtn').click(function(){
     staModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.staModal .modal-body .row .col-lg-8 iframe').length)
   $('.staModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F24.2)seleniumtesting.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -623,6 +655,7 @@ var sqlModal = $('.modal-overlay.sqlModal');
 $('button#sqlModalBtn').click(function(){
     sqlModal.addClass('active');
   activeModalOverlayChild();
+    if(!$('.sqlModal .modal-body .row .col-lg-8 iframe').length)
   $('.sqlModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F25)SQL PDF 11.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
@@ -632,6 +665,7 @@ $('.close-modal-btn').click(function(){
   var modal = $('.modal');
   modal.removeClass('active');
   modalOverlay.removeClass('active');
+  // $('iframe').remove();
 });
 
 
@@ -646,6 +680,7 @@ $('button#modal_button').click(function(){
 $('.close-modal').click(function(){
   var elements = $('.modal-overlay, .modal');
     elements.removeClass('active');
+
 });
 
 // show more show less 
