@@ -3015,24 +3015,20 @@
         <h3 style="margin: 10px;"><strong>OR</strong></h3>
 
         <h3 style="margin: 10px;"><strong>Enroll with Form</strong></h3>
-
+        
         <div style="display: flex; flex-direction: column; margin: 10px;">
-          <script type="text/javascript">
-            var submitted = false;
-          </script><iframe id="hidden_iframe" name="hidden_iframe"
-            onload="if(submitted) {window.location='thankyou.html';}" style="display:none;"></iframe>
-
-          <form
-            action="https://docs.google.com/forms/u/7/d/e/1FAIpQLScufLs8OlUS-m0Yb5Iw8mTCDegw_78LONewYpivmnromx5abg/formResponse"
-            onsubmit="submitted1=true;" style="display: flex; flex-direction: column; justify-content: stretch;"
-            target="hidden_iframe"><input class="form-input" name="entry.831785372" placeholder="Name" required=""
-              type="text"> <input class="form-input" maxlength="10" minlength="10" name="entry.744172265"
-              placeholder="PhoneNo" required="" type="tel"> <input class="form-input" name="entry.544595364"
-              placeholder="Email" required="" type="email">
-            <input class="form-input" name="entry.1425119734" placeholder="Domain eg: Java" required=""
-              type="text"><button name="Submit" type="submit">SUBMIT</button>
-          </form>
-        </div>
+          <script type="text/javascript">var submitted = false;</script>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+          <form action="https://docs.google.com/forms/u/7/d/e/1FAIpQLScufLs8OlUS-m0Yb5Iw8mTCDegw_78LONewYpivmnromx5abg/formResponse" style="display: flex; flex-direction: column; justify-content: stretch;" target="hidden_iframe" onsubmit="submitted=true;">
+          <input type="text" class="form-input" name="entry.831785372" placeholder="Name" required="">
+          <input type="tel" minlength="10" maxlength="10" class="form-input" name="entry.744172265" placeholder="PhoneNo" required="">
+          <input type="email" class="form-input" name="entry.544595364" placeholder="Email" required="">
+          <input type="text" class="form-input" name="entry.1425119734" placeholder="Domain eg: Java" required="">
+          
+          <button type="submit" name="Submit">SUBMIT</button>
+        </form>
+        
+      </div>
       </div>
       <!-- content -->
     </div>
