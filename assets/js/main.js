@@ -229,7 +229,7 @@ $('.top-job-slider').slick({
  $('.brand-active').slick({
   dots: false,
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   speed: 400,
   arrows: false,
   slidesToShow: 5,
