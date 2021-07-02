@@ -10406,6 +10406,16 @@ ul.breadcrumb li a:hover {
 	text-align: left;
 }
 
+
+
+/* back to home button */
+
+#back-top a,
+#back-top a{
+  color:#fff;
+}
+
+
 /* Training Features */
 
 .features .row .featureCard{
