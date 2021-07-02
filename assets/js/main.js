@@ -605,14 +605,13 @@ $('button#hrModalBtn').click(function(){
 
 
 // marketing
-var marketingModal = $('.modal-overlay.marketingModal');
-$('button#marketingModalBtn').click(function(){
-    marketingModal.addClass('active');
-  activeModalOverlayChild();
-    if(!$('.marketingModal .modal-body .row .col-lg-8 iframe').length)
-  $('.marketingModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fwb.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
-
-});
+// var marketingModal = $('.modal-overlay.marketingModal');
+// $('button#marketingModalBtn').click(function(){
+//     marketingModal.addClass('active');
+//   activeModalOverlayChild();
+//     if(!$('.marketingModal .modal-body .row .col-lg-8 iframe').length)
+//   $('.marketingModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fwb.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
+// });
 
 
 // sf
