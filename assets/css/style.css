@@ -10454,3 +10454,16 @@ i.placement{
 p.featurecontent {
   line-height: 22px;
 }
+
+.studentProgram .training-list{
+  height: auto;
+}
+
+.studentProgram .our-services .single-services {
+  padding: 26px 26px;
+}
+
+.studentProgram .services-ion i{
+  color:black; 
+  font-size: 36px;
+}
