@@ -494,13 +494,51 @@ $('button#digitalModalBtn').click(function(){
 
 });
 
-// android
-var androidModal = $('.modal-overlay.androidModal');
-$('button#androidModalBtn').click(function(){
-    androidModal.addClass('active');
+// android Basic
+var androidBModal = $('.modal-overlay.androidBModal');
+$('button#androidBModalBtn').click(function(){
+    androidBModal.addClass('active');
   activeModalOverlayChild();
-    if(!$('.androidModal .modal-body .row .col-lg-8 iframe').length)
-  $('.androidModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroid basic + adv  pdf.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
+    if(!$('.androidBModal .modal-body .row .col-lg-8 iframe').length)
+  $('.androidBModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroid basic + adv  pdf.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
+
+});
+
+// android Advance
+var androidAModal = $('.modal-overlay.androidAModal');
+$('button#androidAModalBtn').click(function(){
+    androidAModal.addClass('active');
+  activeModalOverlayChild();
+    if(!$('.androidAModal .modal-body .row .col-lg-8 iframe').length)
+  $('.androidAModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroid basic + adv  pdf.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
+
+});
+
+// android Basic + Advance
+var androidBAModal = $('.modal-overlay.androidBAModal');
+$('button#androidBAModalBtn').click(function(){
+    androidBAModal.addClass('active');
+  activeModalOverlayChild();
+    if(!$('.androidBAModal .modal-body .row .col-lg-8 iframe').length)
+  $('.androidBAModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroid basic + adv  pdf.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
+
+});
+// C
+var cModal = $('.modal-overlay.cModal');
+$('button#cModalBtn').click(function(){
+    cModal.addClass('active');
+  activeModalOverlayChild();
+    if(!$('.cModal .modal-body .row .col-lg-8 iframe').length)
+  $('.cModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2FC.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
+
+});
+// CPP
+var cppModal = $('.modal-overlay.cppModal');
+$('button#cppModalBtn').click(function(){
+    cppModal.addClass('active');
+  activeModalOverlayChild();
+    if(!$('.cppModal .modal-body .row .col-lg-8 iframe').length)
+  $('.cppModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2FCPP.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
 
