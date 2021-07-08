@@ -500,7 +500,7 @@ $('button#androidBModalBtn').click(function(){
     androidBModal.addClass('active');
   activeModalOverlayChild();
     if(!$('.androidBModal .modal-body .row .col-lg-8 iframe').length)
-  $('.androidBModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroid basic + adv  pdf.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
+  $('.androidBModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroidbasic.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
 
@@ -510,7 +510,7 @@ $('button#androidAModalBtn').click(function(){
     androidAModal.addClass('active');
   activeModalOverlayChild();
     if(!$('.androidAModal .modal-body .row .col-lg-8 iframe').length)
-  $('.androidAModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroid basic + adv  pdf.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
+  $('.androidAModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroidadv.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
 
@@ -520,7 +520,7 @@ $('button#androidBAModalBtn').click(function(){
     androidBAModal.addClass('active');
   activeModalOverlayChild();
     if(!$('.androidBAModal .modal-body .row .col-lg-8 iframe').length)
-  $('.androidBAModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroid basic + adv  pdf.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
+  $('.androidBAModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fandroidbasicadv.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
 // C
@@ -694,6 +694,17 @@ $('button#sqlModalBtn').click(function(){
   activeModalOverlayChild();
     if(!$('.sqlModal .modal-body .row .col-lg-8 iframe').length)
   $('.sqlModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2F25)SQL PDF 11.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
+
+});
+
+
+// sponsorship
+var sponsorshipModal = $('.modal-overlay.sponsorshipModal');
+$('button#sponsorshipModalBtn').click(function(){
+    sponsorshipModal.addClass('active');
+  activeModalOverlayChild();
+    if(!$('.sponsorshipModal .modal-body .row .col-lg-8 iframe').length)
+  $('.sponsorshipModal .modal-body .row .col-lg-8').append(' <iframe id="pdf-js-viewer" src="/assets/library/pdfjs/web/viewer.html?file=%2Fassets%2Fpdf%2Fsponsorship.pdf" title="webviewer" frameborder="0" class="w-100 h-100"></iframe> ');
 
 });
 
